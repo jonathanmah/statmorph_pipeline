@@ -1,0 +1,131 @@
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:28:43.31+11:45:18.1/NGVSJ12:28:43.31+11:45:18.1_G_galfit_model.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:52:17.50+11:18:49.9/NGVSJ12:52:17.50+11:18:49.9_G_galfit_model.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:28:43.31+11:45:18.1/NGVSJ12:28:43.31+11:45:18.1_G_galfit_residual.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:52:17.50+11:18:49.9/NGVSJ12:52:17.50+11:18:49.9_G_galfit_residual.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:29:53.55+14:04:06.9/NGVSJ12:29:53.55+14:04:06.9_G_galfit_model.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:29:53.55+14:04:06.9/NGVSJ12:29:53.55+14:04:06.9_G_galfit_residual.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:34:02.98+07:41:57.5/NGVSJ12:34:02.98+07:41:57.5_G_galfit_model.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:34:02.98+07:41:57.5/NGVSJ12:34:02.98+07:41:57.5_G_galfit_residual.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:34:06.08+11:19:16.5/NGVSJ12:34:06.08+11:19:16.5_G_galfit_model.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:34:06.08+11:19:16.5/NGVSJ12:34:06.08+11:19:16.5_G_galfit_residual.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:35:30.58+12:13:14.7/NGVSJ12:35:30.58+12:13:14.7_G_galfit_model.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:35:30.58+12:13:14.7/NGVSJ12:35:30.58+12:13:14.7_G_galfit_residual.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:36:54.86+12:31:12.5/NGVSJ12:36:54.86+12:31:12.5_G_galfit_model.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:36:54.86+12:31:12.5/NGVSJ12:36:54.86+12:31:12.5_G_galfit_residual.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:37:30.56+09:33:18.4/NGVSJ12:37:30.56+09:33:18.4_G_galfit_model.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:37:30.56+09:33:18.4/NGVSJ12:37:30.56+09:33:18.4_G_galfit_residual.fits
+
+checking NGVSJ12:52:17.50+11:18:49.9
+Finished processing source 100.
+
+complete NGVSJ12:52:17.50+11:18:49.9
+WARNING: FITSFixedWarning: RADECSYS= 'ICRS ' / Astrometric system 
+the RADECSYS keyword is deprecated, use RADESYSa. [astropy.wcs.wcs]
+checking NGVSJ12:28:43.31+11:45:18.1
+Finished processing source 100.
+
+complete NGVSJ12:28:43.31+11:45:18.1
+checking NGVSJ12:29:53.55+14:04:06.9
+Finished processing source 100.
+
+complete NGVSJ12:29:53.55+14:04:06.9
+checking NGVSJ12:34:02.98+07:41:57.5
+Finished processing source 100.
+
+complete NGVSJ12:34:02.98+07:41:57.5
+checking NGVSJ12:34:06.08+11:19:16.5
+Finished processing source 100.
+
+complete NGVSJ12:34:06.08+11:19:16.5
+checking NGVSJ12:35:30.58+12:13:14.7
+Finished processing source 100.
+
+complete NGVSJ12:35:30.58+12:13:14.7
+checking NGVSJ12:36:54.86+12:31:12.5
+Finished processing source 100.
+
+complete NGVSJ12:36:54.86+12:31:12.5
+checking NGVSJ12:37:30.56+09:33:18.4
+Finished processing source 100.
+
+complete NGVSJ12:37:30.56+09:33:18.4
+WARNING: FITSFixedWarning: RADECSYS= 'ICRS ' / Astrometric system 
+the RADECSYS keyword is deprecated, use RADESYSa. [astropy.wcs.wcs]
+WARNING: [asym_center] Asymmetry center is masked. [statmorph.statmorph]
+WARNING: [rpetro_circ] Mean flux is zero. [statmorph.statmorph]
+WARNING: [rpetro_ellip] Mean flux is zero. [statmorph.statmorph]
+WARNING: [sersic] Skipping Sersic fit... [statmorph.statmorph]
+WARNING: FITSFixedWarning: RADECSYS= 'ICRS ' / Astrometric system 
+the RADECSYS keyword is deprecated, use RADESYSa. [astropy.wcs.wcs]
+WARNING: [asym_center] Asymmetry center is masked. [statmorph.statmorph]
+WARNING: [rpetro_circ] Mean flux is zero. [statmorph.statmorph]
+WARNING: [rpetro_ellip] Mean flux is zero. [statmorph.statmorph]
+WARNING: [sersic] Skipping Sersic fit... [statmorph.statmorph]
+WARNING: FITSFixedWarning: RADECSYS= 'ICRS ' / Astrometric system 
+the RADECSYS keyword is deprecated, use RADESYSa. [astropy.wcs.wcs]
+WARNING: [asym_center] Asymmetry center is masked. [statmorph.statmorph]
+WARNING: [rpetro_circ] Mean flux is zero. [statmorph.statmorph]
+WARNING: [rpetro_ellip] Mean flux is zero. [statmorph.statmorph]
+WARNING: [sersic] Skipping Sersic fit... [statmorph.statmorph]
+WARNING: FITSFixedWarning: RADECSYS= 'ICRS ' / Astrometric system 
+the RADECSYS keyword is deprecated, use RADESYSa. [astropy.wcs.wcs]
+WARNING: Centroid is masked. [statmorph.statmorph]
+WARNING: [asym_center] Asymmetry center is masked. [statmorph.statmorph]
+WARNING: [rpetro_circ] Mean flux is zero. [statmorph.statmorph]
+WARNING: [rpetro_ellip] Mean flux is zero. [statmorph.statmorph]
+WARNING: [M statistic] Reduced stepsize to 0.01. [statmorph.statmorph]
+WARNING: [M statistic] Reduced stepsize to 0.005. [statmorph.statmorph]
+WARNING: [M statistic] Reduced stepsize to 0.0025. [statmorph.statmorph]
+WARNING: [sersic] Skipping Sersic fit... [statmorph.statmorph]
+WARNING: FITSFixedWarning: RADECSYS= 'ICRS ' / Astrometric system 
+the RADECSYS keyword is deprecated, use RADESYSa. [astropy.wcs.wcs]
+/home/ubuntu/.local/lib/python3.6/site-packages/statmorph/statmorph.py:545: RuntimeWarning: invalid value encountered in sqrt
+  local_std = np.sqrt(local_mean2 - local_mean**2)
+/home/ubuntu/.local/lib/python3.6/site-packages/statmorph/statmorph.py:549: RuntimeWarning: invalid value encountered in greater
+  self._n_sigma_outlier * local_std)
+WARNING: Centroid is masked. [statmorph.statmorph]
+WARNING: [rpetro_circ] Mean flux is zero. [statmorph.statmorph]
+WARNING: [asym_center] Asymmetry center is masked. [statmorph.statmorph]
+WARNING: [rpetro_ellip] Mean flux is zero. [statmorph.statmorph]
+WARNING: [sersic] Skipping Sersic fit... [statmorph.statmorph]
+WARNING: FITSFixedWarning: RADECSYS= 'ICRS ' / Astrometric system 
+the RADECSYS keyword is deprecated, use RADESYSa. [astropy.wcs.wcs]
+WARNING: [asym_center] Asymmetry center is masked. [statmorph.statmorph]
+WARNING: [sersic] Skipping Sersic fit... [statmorph.statmorph]
+WARNING: FITSFixedWarning: RADECSYS= 'ICRS ' / Astrometric system 
+the RADECSYS keyword is deprecated, use RADESYSa. [astropy.wcs.wcs]
+WARNING: [asym_center] Asymmetry center is masked. [statmorph.statmorph]
+WARNING: [rpetro_circ] Mean flux is zero. [statmorph.statmorph]
+WARNING: [rpetro_ellip] Mean flux is zero. [statmorph.statmorph]
+WARNING: [sersic] Skipping Sersic fit... [statmorph.statmorph]
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:28:43.31+11:45:18.1/NGVSJ12:28:43.31+11:45:18.1_G_galfit_model.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:52:17.50+11:18:49.9/NGVSJ12:52:17.50+11:18:49.9_G_galfit_model.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:28:43.31+11:45:18.1/NGVSJ12:28:43.31+11:45:18.1_G_galfit_residual.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:52:17.50+11:18:49.9/NGVSJ12:52:17.50+11:18:49.9_G_galfit_residual.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:29:53.55+14:04:06.9/NGVSJ12:29:53.55+14:04:06.9_G_galfit_model.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:29:53.55+14:04:06.9/NGVSJ12:29:53.55+14:04:06.9_G_galfit_residual.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:34:02.98+07:41:57.5/NGVSJ12:34:02.98+07:41:57.5_G_galfit_model.fits
+
+ERROR:: NodeNotFound: vos://cadc.nrc.ca!vault/ngvs/data/NGVS/galaxies/NGVSJ12:34:02.98+07:41:57.5/NGVSJ12:34:02.98+07:41:57.5_G_galfit_residual.fits
+
