@@ -100,4 +100,4 @@ The following directories below are used for tracking galaxies with different ki
   
 **mnt/scratch/largefile/** : galaxies which had an galaxyName_G.fits file of size greater than 300MB  
   
-You can find the total number of galaxies a directories by using `ls | wc -l` 
+You can find the total number of galaxies in a directory by using `ls | wc -l` 
