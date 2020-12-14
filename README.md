@@ -14,7 +14,7 @@ The terminal should now show `ubuntu@ngvsui:~$`
 
 tmux allows you to open another terminal session to run in the background.
 
-You can attach to a session using `tmux attach`
+Attach to a session using `tmux attach`
 
 If there are no sessions you can create one using `tmux new`
 
@@ -31,7 +31,7 @@ You should now see
 If you are ready to run a new script and do not need the results from a previous run.  
 Use &nbsp;&nbsp;`rm /mnt/scratch/check/*; rm /mnt/scratch/temp_galaxy_storage/*; rm /mnt/scratch/missing/*; rm /mnt/scratch/emptyseg/*; rm /mnt/scratch/largefile/*; rm ~/statmorph_pipeline/nohup.out`    
   
-**Note:** You can use up/down arrow keys on keyboard for recent commands to avoid typing all of that out
+**Note:** You can use up/down arrow keys on keyboard for recently used commands to avoid typing all of that out
   
 In the **Analyzing Results / Debugging section** I explain what these are. 
 
