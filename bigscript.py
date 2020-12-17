@@ -73,10 +73,10 @@ def checkCorrupt(galaxy):
 def inEllipse(i,j,xCenter,yCenter,size,ratio,angle):
 
     # Size is effective radius of galaxy which is then multiplied by a number to increase size of ellipse
-    if (size > 160):
-        size = 10*size
+    if (size > 30):
+        size = 20*size
     else:   
-        size = 4*size
+        size = 10*size
 
     x = (i-xCenter)
     y = (j-yCenter)
@@ -88,6 +88,8 @@ def inEllipse(i,j,xCenter,yCenter,size,ratio,angle):
 
 
 def statmorphWrapper(index_pairs):
+
+    crash = ['NGVSJ12:29:48.87+13:25:46.0', 'NGVSJ12:30:49.42+12:23:28.0']
     
     df = pd.read_csv('NGVSgalaxies.csv')
 
@@ -97,12 +99,8 @@ def statmorphWrapper(index_pairs):
         base = 'https://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/files/vault/ngvs/data/NGVS/galaxies/'
         galaxyPath = f'{galaxy}/{galaxy}_G'
 
-        # Create check file for current galaxy
-        print(f'checking {galaxy}')
-        writeFile = open(f'/mnt/scratch/check/{galaxy}.txt', 'w') 
-        writeFile.write('checking')
-        writeFile.close()
-
+        if galaxy in crash :
+            continue
 
         startcopy = time.time()
         # Try to copy galaxy files
@@ -145,15 +143,19 @@ def statmorphWrapper(index_pairs):
             clearTempFiles(galaxy)
             continue
 
-        # ONLY PROCESS SMALLER FILES
+        # ONLY PROCESS LARGE FILE
         #---------------------------------------------------------------------------------------
-        if(os.path.getsize(f'/mnt/scratch/temp_galaxy_storage/{galaxy}_G.fits') >= 300000000):
-            writeFile = open(f'/mnt/scratch/largefile/{galaxy}.txt', 'w')     
-            writeFile.write(f'{galaxy}\n')
-            writeFile.close()
+        if(os.path.getsize(f'/mnt/scratch/temp_galaxy_storage/{galaxy}_G.fits') < 300000000):
             clearTempFiles(galaxy)
             continue
         #---------------------------------------------------------------------------------------
+
+        # Create check file for current galaxy
+        print(f'checking {galaxy}')
+        writeFile = open(f'/mnt/scratch/check/{galaxy}.txt', 'w') 
+        writeFile.write('checking')
+        writeFile.close()
+
 
         # If any of the galaxy files are empty then create galaxy corrupt file and continue to next galaxy
         if(checkCorrupt(galaxy)):
@@ -245,7 +247,7 @@ def statmorphWrapper(index_pairs):
 
 
         # If the galaxy's segmentation map is empty with no area of interest, then create empty galaxy file and continue to next galaxy
-        if(isEmpty):    
+        if(isEmpty):
             writeFile = open(f'/mnt/scratch/emptyseg/{galaxy}.txt', 'w')     
             writeFile.write('empty')
             writeFile.close()
@@ -384,7 +386,7 @@ def statmorphWrapper(index_pairs):
 
         # UPLOAD PNG FILE WITH RUNNING TIMES & RE FACTOR & MAGNITUDE
         os.system(f'vcp /mnt/scratch/output/{galaxy}_sourcemorph:{round(end_time, 2)}_seg={round(endseg, 2)}_RE={round(row.Size, 3)}_mag={round(row.principleg_mag_cg, 3)}.png \
-        vos:ngvs/data/STATMORPH/dec17/{galaxy}_sourcemorph:{round(end_time, 2)}_seg={round(endseg, 2)}_RE={round(row.Size, 3)}_mag={round(row.principleg_mag_cg, 3)}.png')
+        vos:ngvs/data/STATMORPH/memory_fix/{galaxy}_sourcemorph:{round(end_time, 2)}_seg={round(endseg, 2)}_RE={round(row.Size, 3)}_mag={round(row.principleg_mag_cg, 3)}.png')
         if path.isfile(f'/mnt/scratch/output/{galaxy}_sourcemorph:{round(end_time, 2)}_seg={round(endseg, 2)}_RE={round(row.Size, 3)}_mag={round(row.principleg_mag_cg, 3)}.png'):
             os.system(f'rm /mnt/scratch/output/{galaxy}_sourcemorph:{round(end_time, 2)}_seg={round(endseg, 2)}_RE={round(row.Size, 3)}_mag={round(row.principleg_mag_cg, 3)}.png')
 
@@ -397,13 +399,12 @@ if __name__ == '__main__':
     #the index pairs represent the starting index and end index of the rows to parse in the csv for each process.
 
     #index_pairs = [[0,922], [922,1844], [1844,2766], [2766,3689]]
-    index_pairs = [[200,250],[1000,1050], [2350,2400], [3050,3100]]
-    #index_pairs = [[200,205],[1000,1005], [2350,2355], [3050,3055]]
-    #index_pairs = [100,500]
+    #index_pairs = [[200,250],[1000,1050], [2350,2400], [3050,3100]]
+    index_pairs = [100,300]
 
     # multiprocessing option (index pairs must be 2D list)
-    pool = mp.Pool(mp.cpu_count())
-    pool.map(statmorphWrapper, index_pairs)
+    #pool = mp.Pool(mp.cpu_count())
+    #pool.map(statmorphWrapper, index_pairs)
     
     # single process option (index pairs must be 1D list)
-    #statmorphWrapper(index_pairs)
+    statmorphWrapper(index_pairs)
