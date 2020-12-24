@@ -1,5 +1,7 @@
 # statmorph_pipeline
 
+The statmorph pipeline is a python pipeline to fit two-dimensional galaxy models and measure each galaxy's concentration, asymmetry, and smoothness.
+
 ## How To Run Statmorph Script
 
 The following commands in `code blocks` will be entered in the terminal
