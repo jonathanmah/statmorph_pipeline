@@ -83,6 +83,10 @@ You can detach from the current session using `Ctrl + b` then `d`. If you detach
   
 That's all there is to running the statmorph pipeline!
 
+## Sample Output
+<p align="center">
+  <img src="statmorph.png">
+</p>
 
 ## Analyzing Results / Debugging
 
